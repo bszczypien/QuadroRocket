@@ -11,6 +11,18 @@ import android.view.View;
 import android.widget.EditText;
 import android.widget.TextView;
 
+/*
+ * author: Bartosz Szczypieñ
+ * it's just start point, general flow:
+ * 
+ * android device tries to connect to the bluetooth module on quadrocopter
+ * 		MainActivity should have clear UI with choice of options
+ * 		at this point MainActivity should decide which Activity should be called as the next one (according to user choice)
+ * 		at this moment the choice should looks like:
+ * 			-Simulator (GLESCanvas - start point)
+ * 			-RealApplication (with a real and-device to quadrocopter (bluetooth module) connection, not yet created)
+ * 			-AdditionalConsole to communicate with bluetooth on quadrocopter (with capabilities to insert special commands, it should help to improve debugging)
+ * */
 public class MainActivity extends Activity 
 {
 	private BluetoothController _bluetoothController;
